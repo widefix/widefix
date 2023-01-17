@@ -1,0 +1,17 @@
+.roadmap {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    background: transparent url(../img/roadmap.svg) no-repeat center;
+    background-size: contain;
+    padding-bottom: 102px;
+
+    .inner {
+        height: 493px;
+    }
+}
