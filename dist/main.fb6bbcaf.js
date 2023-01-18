@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -142,7 +142,7 @@ function getBaseURL(url) {
 }
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 function updateLink(link) {
   var newLink = link.cloneNode();
@@ -168,11 +168,11 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/icons/arrow-down.svg":[["arrow-down.6b0e0494.svg","img/icons/arrow-down.svg"],"img/icons/arrow-down.svg"],"./../img/decoration/optimise-text-border-bottom.svg":[["optimise-text-border-bottom.4f00a248.svg","img/decoration/optimise-text-border-bottom.svg"],"img/decoration/optimise-text-border-bottom.svg"],"./../img/decoration/app-not-ready-border-bottom.svg":[["app-not-ready-border-bottom.1d741d81.svg","img/decoration/app-not-ready-border-bottom.svg"],"img/decoration/app-not-ready-border-bottom.svg"],"./../img/decoration/what-we-do-border-bottom.svg":[["what-we-do-border-bottom.fad59f8c.svg","img/decoration/what-we-do-border-bottom.svg"],"img/decoration/what-we-do-border-bottom.svg"],"./../img/decoration/trust-oval.svg":[["trust-oval.2c43a5b6.svg","img/decoration/trust-oval.svg"],"img/decoration/trust-oval.svg"],"./../img/decoration/optimize-oval.svg":[["optimize-oval.91367423.svg","img/decoration/optimize-oval.svg"],"img/decoration/optimize-oval.svg"],"./../img/roadmap.svg":[["roadmap.e5679d21.svg","img/roadmap.svg"],"img/roadmap.svg"],"./../img/banner-bottom-bg.png":[["banner-bottom-bg.95f9d92d.png","img/banner-bottom-bg.png"],"img/banner-bottom-bg.png"],"./../img/decoration/trusted.svg":[["trusted.38f5dfff.svg","img/decoration/trusted.svg"],"img/decoration/trusted.svg"],"./../img/book.png":[["book.cc124f2d.png","img/book.png"],"img/book.png"],"./../img/techblog-bg.png":[["techblog-bg.9c21c455.png","img/techblog-bg.png"],"img/techblog-bg.png"],"./../img/library-blue-icon.svg":[["library-blue-icon.cdf6615a.svg","img/library-blue-icon.svg"],"img/library-blue-icon.svg"],"./../img/library-green-icon.svg":[["library-green-icon.eab50339.svg","img/library-green-icon.svg"],"img/library-green-icon.svg"],"./../img/decoration/clients.svg":[["clients.59ce442f.svg","img/decoration/clients.svg"],"img/decoration/clients.svg"],"./../img/reviews-bg-left.svg":[["reviews-bg-left.8cba4f9a.svg","img/reviews-bg-left.svg"],"img/reviews-bg-left.svg"],"./../img/reviews-bg-right.svg":[["reviews-bg-right.281fe212.svg","img/reviews-bg-right.svg"],"img/reviews-bg-right.svg"],"./../img/icons/star.svg":[["star.dc8882df.svg","img/icons/star.svg"],"img/icons/star.svg"],"./../img/icons/half-star.svg":[["half-star.5efa592a.svg","img/icons/half-star.svg"],"img/icons/half-star.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/modules/burger-menu.js":[function(require,module,exports) {
+},{"./../img/icons/arrow-down.svg":[["arrow-down.6b0e0494.svg","img/icons/arrow-down.svg"],"img/icons/arrow-down.svg"],"./../img/decoration/optimise-text-border-bottom.svg":[["optimise-text-border-bottom.4f00a248.svg","img/decoration/optimise-text-border-bottom.svg"],"img/decoration/optimise-text-border-bottom.svg"],"./../img/decoration/app-not-ready-border-bottom.svg":[["app-not-ready-border-bottom.1d741d81.svg","img/decoration/app-not-ready-border-bottom.svg"],"img/decoration/app-not-ready-border-bottom.svg"],"./../img/decoration/what-we-do-border-bottom.svg":[["what-we-do-border-bottom.fad59f8c.svg","img/decoration/what-we-do-border-bottom.svg"],"img/decoration/what-we-do-border-bottom.svg"],"./../img/decoration/trust-oval.svg":[["trust-oval.2c43a5b6.svg","img/decoration/trust-oval.svg"],"img/decoration/trust-oval.svg"],"./../img/decoration/optimize-oval.svg":[["optimize-oval.91367423.svg","img/decoration/optimize-oval.svg"],"img/decoration/optimize-oval.svg"],"./../img/roadmap.svg":[["roadmap.e5679d21.svg","img/roadmap.svg"],"img/roadmap.svg"],"./../img/banner-bottom-bg.png":[["banner-bottom-bg.95f9d92d.png","img/banner-bottom-bg.png"],"img/banner-bottom-bg.png"],"./../img/decoration/trusted.svg":[["trusted.38f5dfff.svg","img/decoration/trusted.svg"],"img/decoration/trusted.svg"],"./../img/book.png":[["book.cc124f2d.png","img/book.png"],"img/book.png"],"./../img/techblog-bg.png":[["techblog-bg.9c21c455.png","img/techblog-bg.png"],"img/techblog-bg.png"],"./../img/library-blue-icon.svg":[["library-blue-icon.cdf6615a.svg","img/library-blue-icon.svg"],"img/library-blue-icon.svg"],"./../img/library-green-icon.svg":[["library-green-icon.eab50339.svg","img/library-green-icon.svg"],"img/library-green-icon.svg"],"./../img/decoration/clients.svg":[["clients.59ce442f.svg","img/decoration/clients.svg"],"img/decoration/clients.svg"],"./../img/reviews-bg-left.svg":[["reviews-bg-left.8cba4f9a.svg","img/reviews-bg-left.svg"],"img/reviews-bg-left.svg"],"./../img/reviews-bg-right.svg":[["reviews-bg-right.281fe212.svg","img/reviews-bg-right.svg"],"img/reviews-bg-right.svg"],"./../img/icons/star.svg":[["star.dc8882df.svg","img/icons/star.svg"],"img/icons/star.svg"],"./../img/icons/half-star.svg":[["half-star.5efa592a.svg","img/icons/half-star.svg"],"img/icons/half-star.svg"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/modules/burger-menu.js":[function(require,module,exports) {
 var toggleButton = document.querySelector('.menu-toggle');
 var nav = document.querySelector('nav');
 toggleButton.addEventListener('click', function () {
@@ -256,7 +256,7 @@ require("./modules/burger-menu.js");
 require("./modules/slider.js");
 require("./modules/back-to-top.js");
 initBackToTop();
-},{"../css/main.scss":"css/main.scss","./modules/burger-menu.js":"js/modules/burger-menu.js","./modules/slider.js":"js/modules/slider.js","./modules/back-to-top.js":"js/modules/back-to-top.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../css/main.scss":"css/main.scss","./modules/burger-menu.js":"js/modules/burger-menu.js","./modules/slider.js":"js/modules/slider.js","./modules/back-to-top.js":"js/modules/back-to-top.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -281,7 +281,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59179" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62617" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -425,5 +425,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/main.js"], null)
+},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/main.js"], null)
 //# sourceMappingURL=/main.fb6bbcaf.js.map
