@@ -13,14 +13,14 @@
           uses: actions/checkout@master
 
         - name: Set up Node
-          uses: actions/setup-node@v1.1.0
+          - uses: actions/setup-node@v3
           with:
             node-version: '12.0.0'
 
-        - uses: borales/actions-yarn@v2.0.0
+        - uses: borales/actions-yarn@v3
           with:
             cmd: install
 
-        - uses: borales/actions-yarn@v2.0.0
+        - uses: borales/actions-yarn@v3
           with:
             cmd: build
