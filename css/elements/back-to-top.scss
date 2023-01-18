@@ -17,14 +17,20 @@
                 color: #424242;
             }
 
-            #toTop{
+            #toTop {
                 width: 40px;
                 height: 40px;
                 border-radius: 100px;
+                border: none;
                 background-color: $text-link-accent-default;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $text-link-accent-hover;
+                }
             }
         }
     }
