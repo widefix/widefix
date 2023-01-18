@@ -1,6 +1,6 @@
 .you-can-trust {
 
-    h1 {
+    h2 {
         font: $text-header-2xl;
         margin-bottom: 40px;
         margin-top: 0;
@@ -44,7 +44,7 @@
             max-width: 723px;
         }
     }
-      
+
     .block {
         margin-bottom: 20px;
         border-radius: 8px;
@@ -60,7 +60,7 @@
             background-color: rgba(237, 144, 72, .08);
         }
 
-        h2 {
+        h3 {
             display: flex;
             align-items: center;
             font: $text-header-l;
@@ -78,4 +78,3 @@
         }
     }
 }
-  

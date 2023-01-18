@@ -17,6 +17,10 @@
     &.primary {
         color: $text-button-primary;
         background-color: $primary-default;
+        appearance: button;
+        display: inline-block;
+        vertical-align: center;
+        line-height: 52px;
 
         &:hover {
             background-color: $primary-hover;
