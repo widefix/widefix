@@ -7,7 +7,6 @@
         header {
             max-width: 600px;
             padding-top: 20px;
-            padding-bottom: 100px;
             h2 {
                 font-style: normal;
                 font-weight: 400;
@@ -44,6 +43,9 @@
                 .curve {
                     img {
                         width: 100%;
+                        @media (max-width: $media-sm) {
+                            height: 200px;
+                        }
                     }
                 }
             }

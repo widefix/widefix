@@ -1,7 +1,7 @@
 @mixin art-decoration($decoration, $height, $left:1px, $right:1px) {
     span {
         position: relative;
-        height: $height;
+        height: $height !important;
         padding-left: $left;
         margin-left: -$left;
         padding-right: $right;
