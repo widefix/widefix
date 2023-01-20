@@ -17,6 +17,7 @@
             margin-top: 40px;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             gap: 46px;
 
             @media (max-width: $media-lg) {
@@ -27,9 +28,11 @@
                 flex-wrap: nowrap;
                 flex-direction: column;
             }
-            
+
 
             .client {
+                padding-left: 5px;
+                padding-right: 5px;
                 background-color: #fff;
                 width: 272px;
                 height: 160px;

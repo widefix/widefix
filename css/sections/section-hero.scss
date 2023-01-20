@@ -7,6 +7,11 @@
         @media (max-width: $media-md) {
             flex-direction: column;
         }
+        p {
+            font: $text-body-display-s;
+            color: $text-secondary;
+            margin-top: 24px;
+        }
     }
     .hero-block-left {
         width: 100%;
@@ -27,11 +32,6 @@
                 @include art-decoration('../img/decoration/optimise-text-border-bottom.svg', 5rem);
             }
         }
-        p {
-            font: $text-body-display-s;
-            color: $text-secondary;
-            margin-top: 24px;
-        }
 
         .button-container {
             margin-top: 32px;
@@ -42,7 +42,6 @@
             background: rgba(228, 228, 228, 0.2);
             border-radius: 16px;
             padding: 24px;
-            width: 100%;
 
             .title {
                 font: $text-body-display-s;
