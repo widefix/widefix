@@ -14,7 +14,7 @@
                 @media (max-width: $media-md) {
                     font: $text-header-xl;
                     span {
-                        height: 50px;
+                        height: 50px !important;
                     }
                 }
             }

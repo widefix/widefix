@@ -4,11 +4,12 @@
         text-align: center;
         h2 {
             font: $text-header-2xl;
+
             @include art-decoration('../img/decoration/trusted.svg', 4.5rem);
             @media (max-width: $media-md) {
                 font: $text-header-xl;
                 span {
-                    height: 50px;
+                    height: 45px !important;
                 }
             }
         }
