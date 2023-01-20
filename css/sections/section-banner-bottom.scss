@@ -1,6 +1,6 @@
 .banner-bottom {
     background: $background-dark url(../img/banner-bottom-bg.png) no-repeat center right;
-    
+
     .inner {
         position:relative;
         display: flex;
@@ -27,13 +27,13 @@
                 font: $text-body-meta-regular;
             }
             @media (max-width: $media-sm) {
-                font: $text-body-floating-label-regular; 
+                font: $text-body-floating-label-regular;
             }
 
         }
         .contacts {
             display: flex;
-            gap: 120px;
+            gap: 20px;
             margin-top: 27px;
 
             .contact {
@@ -48,7 +48,7 @@
                         font: $text-body-meta-regular;
                     }
                     @media (max-width: $media-sm) {
-                        font: $text-body-floating-label-regular; 
+                        font: $text-body-floating-label-regular;
                     }
                     a {
                         color: $text-link-accent-default;
