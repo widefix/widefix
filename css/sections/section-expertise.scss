@@ -22,6 +22,14 @@
                 @media (max-width: $media-md) {
                     width: 272px;
                 }
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        h3 {
+                            color: $text-link-accent-hover !important;
+                        }
+                    }
+                }
                 .content {
                     height: 308px;
                     display: flex;
@@ -32,7 +40,7 @@
                     position: relative;
                     padding: 16px 16px 32px;
                     box-sizing: border-box;
-                    
+
                     span {
                         padding: 7px 16px;
                         text-transform: uppercase;
@@ -45,6 +53,7 @@
                         color: white;
                         font: 700 35px/43px 'Montserrat';
                         text-align: left;
+
                         @media (max-width: $media-lg) {
                             font-size: 28px;
                             line-height: 32px;
