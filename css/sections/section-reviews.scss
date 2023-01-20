@@ -21,23 +21,26 @@
         }
         .slider-wrapper {
             position: relative;
-            &:after,&:before {
-                content: "";
-                position: absolute;
-            }
-            &:before {
-                width: 232px;
-                height: 128px;
-                bottom: -80px;
-                left: -50px;
-                background-image: url('../img/reviews-bg-left.svg')
-            }
-            &:after {
-                width: 176px;
-                height: 316px;
-                top: -15px;
-                right: -90px;
-                background-image: url('../img/reviews-bg-right.svg')
+
+            @media (min-width: $media-md) {
+                &:after,&:before {
+                    content: "";
+                    position: absolute;
+                }
+                &:before {
+                    width: 232px;
+                    height: 128px;
+                    bottom: -80px;
+                    left: -50px;
+                    background-image: url('../img/reviews-bg-left.svg')
+                }
+                &:after {
+                    width: 176px;
+                    height: 316px;
+                    top: -15px;
+                    right: -90px;
+                    background-image: url('../img/reviews-bg-right.svg')
+                }
             }
         }
         .slider {

@@ -22,7 +22,7 @@ header {
       background: white;
       width: 100%;
     }
-    
+
     ul {
       display: flex;
       list-style: none;
@@ -32,7 +32,7 @@ header {
 
       li {
         margin-right: 80px;
-        transition: color 0.3s; 
+        transition: color 0.3s;
         @media (max-width: $media-md) {
           margin-right: 20px;
         }
@@ -95,7 +95,7 @@ header {
       top: 25px;
     }
   }
-  
+
   nav.visible {
     visibility: visible;
   }
