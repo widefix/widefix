@@ -1,4 +1,4 @@
-# landing-markup-widefix
+# Landing page of [WideFix](https://widefix.com)
 
 - `yarn`
 - `yarn dev` and then `open http://localhost:1234/`
