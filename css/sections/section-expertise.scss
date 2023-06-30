@@ -3,9 +3,17 @@
         text-align: center;
         h2 {
             font: $text-header-2xl;
-            margin-bottom: 80px;
+            margin-bottom: 20px;
             @media (max-width: $media-md) {
                 font: $text-header-xl;
+            }
+        }
+
+        header {
+            p {
+                margin-bottom: 20px;
+                font: $text-body-medium;
+                color: $text-secondary;
             }
         }
 

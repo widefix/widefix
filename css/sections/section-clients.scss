@@ -1,5 +1,11 @@
 .clients {
     background-color: #fafafa;
+    header {
+        p {
+            font: $text-body-medium;
+            color: $text-secondary;
+        }
+    }
     .inner {
         text-align: center;
         h2 {
