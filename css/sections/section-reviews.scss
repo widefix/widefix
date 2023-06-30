@@ -1,5 +1,13 @@
 .reviews {
     background: rgba(228, 228, 228, 0.2);
+
+    .button.primary {
+        @media (max-width: $media-sm) {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
     .inner {
         header {
             display: flex;
