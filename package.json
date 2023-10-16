@@ -1,0 +1,24 @@
+{
+  "name": "widefix",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "build": "parcel build pages/*.html",
+    "dev": "parcel pages/*.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@parcel/packager-xml": "2.10.0",
+    "@parcel/transformer-sass": "2.10.0",
+    "@parcel/transformer-xml": "2.10.0",
+    "parcel": "latest",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.57.1",
+    "sharp": "^0.31.1"
+  },
+  "type": "module"
+}

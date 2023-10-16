@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Host: https://widefix.com/
+Sitemap: https://widefix.com/sitemap.xml
