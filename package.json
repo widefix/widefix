@@ -16,6 +16,7 @@
     "@parcel/transformer-sass": "2.10.0",
     "@parcel/transformer-xml": "2.10.0",
     "parcel": "latest",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "posthtml-include": "^1.7.4",
     "sass": "^1.57.1",
     "sharp": "^0.31.1"
