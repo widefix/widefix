@@ -26,7 +26,7 @@
             }
         }
 
-        @media (width >= 1024px) {
+        @media (min-width: $media-md) {
             h1 {
                 font: $text-header-4xl;
                 @include art-decoration('../img/decoration/optimise-text-border-bottom.svg', 5rem);

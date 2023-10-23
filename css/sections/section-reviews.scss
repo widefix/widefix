@@ -30,7 +30,7 @@
         .slider-wrapper {
             position: relative;
 
-            @media (width >= 1024px) {
+            @media (min-width: $media-md) {
                 &:after,&:before {
                     content: "";
                     position: absolute;
