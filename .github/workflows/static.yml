@@ -33,20 +33,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Set up Node
+      - name: Set Node.js 20.x
         uses: actions/setup-node@v3
         with:
-          node-version: '20.6.1'
+          node-version: 20.x
 
-      - uses: borales/actions-yarn@v3
-      - run: |
-          npm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
-          npm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-libvips"
-          npm install sharp
-
-      - uses: borales/actions-yarn@v3
+      - name: Run install
+        uses: borales/actions-yarn@v4
         with:
           cmd: install
+
+      - name: Run build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
