@@ -44,7 +44,13 @@ jobs:
 
       - uses: borales/actions-yarn@v3
         with:
-          cmd: build
+          cmd: install
+
+      - uses: borales/actions-yarn@v3
+        run: |
+          npm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
+          npm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-libvips"
+          npm install sharp
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
