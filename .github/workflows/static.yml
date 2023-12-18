@@ -39,18 +39,14 @@ jobs:
           node-version: '20.6.1'
 
       - uses: borales/actions-yarn@v3
-        with:
-          cmd: install
-
-      - uses: borales/actions-yarn@v3
-        with:
-          cmd: install
-
-      - uses: borales/actions-yarn@v3
       - run: |
           npm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
           npm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-libvips"
           npm install sharp
+
+      - uses: borales/actions-yarn@v3
+        with:
+          cmd: install
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
