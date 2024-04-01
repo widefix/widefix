@@ -22,3 +22,8 @@
         }
     }
 }
+
+@mixin smooth-transition($properties: all, $duration: 0.3s, $timing-function: ease) {
+    transition: $properties $duration $timing-function;
+    -webkit-transition: $properties $duration $timing-function; /* For Safari */
+}

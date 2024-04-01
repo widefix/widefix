@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./clear";
 @import "./layout";
+@import "./fonts";
 @import "./mixins";
 
 @import "./styleguide/color";
@@ -22,6 +23,10 @@
 @import "./sections/section-reviews";
 @import "./sections/section-more-info";
 @import "./sections/footer";
+
+@import "sections/section-portfolio";
+@import 'sections/section-showcases-banner';
+@import 'sections/section-case-studies';
 
 @import "./print";
 

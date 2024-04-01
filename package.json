@@ -23,5 +23,15 @@
     "sharp": "^0.31.1"
   },
   "browserslist": "> 0.5%, last 3 versions, not dead",
-  "type": "module"
+  "type": "module",
+  "parcel": {
+    "transforms": {
+      "*.html": [
+        "parcel-transformer-google-fonts"
+      ]
+    }
+  },
+  "dependencies": {
+    "swiper": "^11.1.0"
+  }
 }
