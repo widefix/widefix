@@ -25,16 +25,16 @@
     //line-height: 98px;
     letter-spacing: -0.3px;
     position: relative;
+
     &:after {
       content: '';
-        position: absolute;
-        width: 81px;
-        height: 76px;
+      position: absolute;
+      width: 81px;
+      height: 76px;
       background-image: url(../img/showcases/crown.svg);
       top: 0;
       right: 0;
     }
-
   }
 }
 
