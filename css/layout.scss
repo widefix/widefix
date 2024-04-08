@@ -1,4 +1,3 @@
-
 section,header,footer {
     .inner {
         max-width: $content-width;
@@ -14,9 +13,7 @@ section,header,footer {
 
     }
 }
-section {
-    overflow: hidden;
-}
+
 section.has-vertical-paddings {
     padding: $section-vertical-padding 0;
 

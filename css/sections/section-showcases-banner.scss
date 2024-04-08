@@ -1,0 +1,33 @@
+.showcases-banner {
+  padding: 80px 0;
+  text-align: center;
+
+  h2 {
+    color: #FFF;
+    font-family: "Greycliff CF";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 118.182% */
+    letter-spacing: -0.48px;
+    margin-bottom: 46px;
+  }
+
+  .inner {
+    display: block;
+  }
+}
+
+.showcase-banner-clients {
+  display: flex;
+  gap: 20px;
+  a {
+    display: flex;
+    border-radius: 24.722px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(13, 34, 52, 0.10);
+    padding: 33px 55px;
+    align-items: center;
+    justify-content: center;
+  }
+}
