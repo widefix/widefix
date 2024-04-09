@@ -11,7 +11,7 @@ const swiper = new Swiper('.clients-swiper', {
     autoplay: true
 });
 
-const swiper2 = new Swiper('.accordion-swiper', {
+const swiper2 = new Swiper('.case-swiper', {
     modules: [Navigation, Pagination],
     slidesPerView: 3,
     spaceBetween: 39,
