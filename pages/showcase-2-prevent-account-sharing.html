@@ -2,13 +2,13 @@
 <html class="no-js" lang="en-US">
 
 <head>
-    <title>Stripe Integration - WideFix</title>
+    <title>Prevent account sharing - WideFix</title>
     <meta name="description"
-          content="See how we fixed Stripe integration data consistency and prevented financial losses.">
+          content="See how we added Multi-Factor Authentication (MFA) and limitted login sessions per user and prevented 5% monthly financial losses.">
     <link rel="canonical" href="https://widefix.com/showcase-1-stripe-integration"/>
     <meta property="og:title" content="Stripe Integration Fix - WideFix">
     <meta property="og:description"
-          content="See how we fixed Stripe integration data consistency and prevented financial losses.">
+          content="See how we added Multi-Factor Authentication (MFA) and limitted login sessions per user and prevented 5% monthly financial losses.">
     <include src="./partials/head.html"></include>
 
     <script type="module" src="../js/case.js" defer></script>
@@ -21,8 +21,7 @@
 <section class="case-banner-top">
     <div class="inner">
         <div class="banner-content">
-            <h1>Stripe Integration consistency <span class="oval">fix</span> to prevent financial <span class="stripe">losses</span>
-            </h1>
+            <h1>Prevent account sharing to <span class="oval">stop</span> financial <span class="stripe">losses</span></h1>
         </div>
         <div class="img-wrapper">
             <img src="../img/showcases/wo.png" alt="Worship online">
@@ -33,13 +32,14 @@
 <section class="case-description gray">
     <div class="inner p-vertical">
         <div class="description">
-            <h2>Solved New User Payment Friction with Stripe Optimization</h2>
-            <p>Identified and eliminated bottlenecks within the payment flow to <strong><i>improve conversion rates</i></strong>
-                for new sign-ups.</p>
+            <h2>Solved the issue with account sharing by users</h2>
+            <p>Added Multi-factor Authentication (MFA) to the project in a risk-free way for the business.
+                That increased daily signups by roughly <b>30%</b>. The revenue has stopped descending <b>5%</b> monthly and recovered. That also has improved security.
+                </p>
         </div>
         <div class="menu">
             <ul>
-                <li><a class="active" href="#what">Stripe Integration</a></li>
+                <li><a class="active" href="#what">Stop account sharing</a></li>
                 <li><a href="#problem">Problem</a></li>
                 <li><a href="#solution">Solution</a></li>
                 <li><a href="#results">Results</a></li>
@@ -54,12 +54,10 @@
     <div class="inner p-vertical">
         <div class="case-details-title">
             <h2 class="with-crown">
-                Stripe integration
+                Stop account sharing
             </h2>
             <p>
-                We fixed data consistency issues between the app and Stripe. The fix resulted in an immediate recovery
-                of $525 monthly recurring revenue (MRR) and <strong><i>prevented future financial losses that could be
-                up to $1500 MRR.</i></strong>
+                We tackled declining revenue by combating widespread account sharing with <strong><i>Multi-factor Authentication (MFA) and login session limits</i></strong>. Through data analysis and monitoring, severe account sharers were targeted, leading to a <strong><i>30% increase</i></strong> in daily signups and a <strong><i>400% reduction in average</i></strong> login sessions per user. Revenue stabilized, <strong><i>preventing 5% monthly losses</i></strong>. The login session limit of three sessions per account enhanced security and accountability.
             </p>
         </div>
         <div>
@@ -73,7 +71,7 @@
     <div class="inner p-vertical">
         <h2 class="problem">Problem</h2>
         <p>
-            While the number of new users increased, the <strong><i>revenue slowly fell</i></strong>.
+            The revenue was <strong><i>slowly descending</i></strong>. It was clear that this happened because the users <strong><i>shared their accounts</i></strong> because of the many logins they used to make daily.
         </p>
         <div class="curvy-image">
             <img src="../img/showcases/case/laptop.png" alt="Laptop"/>
@@ -86,16 +84,10 @@
         <div>
             <h2 class="solution">Solution</h2>
             <p>
-                We gathered all the data from Stripe and saved it into our database. We then analyzed it using SQL and
-                Metabase, revealing a severe Stripe integration breach. This breach was related to asynchronous
-                communication and the unordered processing of webhooks. Our team worked together to come up with
-                possible solutions and ultimately found an easy fix for the issue regarding the architecture. The fix
-                didn't pose any risks to the business. We were able to fix the architectural issue related to the
-                webhook processing and correct the historical data. <strong><i>We also activated subscriptions for all
-                users we could recover.</i></strong>
+                We collected the necessary data to determine who shares their accounts and how severely. Then, we defined indicators showing the situation dynamics and started measuring and monitoring them. We used Metabase to monitor and analyze the data. The users who shared their accounts severely and for sure <strong><i>got Multi-factor Authentication (MFA) enabled</i></strong>, which we also implemented. That increased daily signups by <strong><i>roughly 30%</i></strong>. The average login session per user decreased <strong><i>from 6 to 1.5, or by 400%</i></strong>. Revenue has stopped declining.
             </p>
             <p>
-                We have set up monitoring with Metabase and Slack to prevent the issue from happening again.
+                Later, we implemented a <strong><i>login session limit</i></strong> so that one account could have a maximum of 3 simultaneous login sessions. That was possible only after we built the infrastructure around the measurement system.
             </p>
         </div>
         <div>
@@ -110,56 +102,47 @@
             Results
         </h2>
         <p>
-            983 out of 9,471 premium users did not have an actual subscription, which is roughly 10%. Of these 983
-            users, 514 had a "deleted" status, indicating they had not used the app for a long time. Only 469,
-            equivalent to 5% of all premium users, could exploit the issue. However, only 79 of them had used the app in
-            the last three months and received an attempt to reactivate their subscription. Out of these, 20 immediately
-            acquired an active subscription. The rest got moved to the free plan. <strong><i>The reactivation of the subscriptions
-            resulted in approximately a $525 MRR increase.</i></strong> The applied fix aims to prevent future financial losses that
-            could amount to $1500 in MRR (these are rough calculations done on the historical data).
+            Daily signups increased by <strong><i>30%</i></strong>, login sessions per user <strong><i>decreased by 400%</i></strong>, and revenue stopped declining. Our solution <strong><i>prevented 5%</i></strong> monthly revenue losses.
         </p>
 
         <div class="results-boxes">
             <div class="result-box dark-blue">
                 <img src="../img/showcases/case/icons/cancel.svg" alt="icon" aria-hidden="true" />
-                <div class="result-message">Non-Active Subs</div>
-                <div class="result-number">983/9,471</div>
-                <div class="result-percent">-10%</div>
+                <div class="result-message">Revenue losses</div>
+                <div class="result-number">-5%</div>
             </div>
-            <div class="result-box red">
+            <!-- <div class="result-box red">
                 <img src="../img/showcases/case/icons/trash.svg" alt="icon" aria-hidden="true" />
                 <div class="result-message">Deleted Status</div>
                 <div class="result-number">514</div>
                 <div class="result-percent">45,2%</div>
-            </div>
+            </div>  -->
             <div class="result-box green">
                 <img src="../img/showcases/case/icons/flag.svg" alt="icon" aria-hidden="true" />
                 <div class="result-message">Exploit The Issue</div>
-                <div class="result-number">469</div>
-                <div class="result-percent">5%</div>
+                <div class="result-number">-400%</div>
             </div>
-            <div class="result-box orange">
+            <!--<div class="result-box orange">
                 <img src="../img/showcases/case/icons/piechart.svg" alt="icon" aria-hidden="true" />
                 <div class="result-message">Last Quarter Users</div>
                 <div class="result-number">79</div>
                 <div class="result-percent">1.2%</div>
-            </div>
+            </div> -->
             <div class="result-box blue">
                 <img src="../img/showcases/case/icons/user.svg" alt="icon" aria-hidden="true" />
-                <div class="result-message">Subscribed instantly</div>
-                <div class="result-number">20</div>
-                <div class="result-percent">1.2%</div>
+                <div class="result-message">Monthly signups</div>
+                <div class="result-number">+27%</div>
             </div>
-            <div class="result-box light-blue">
+            <!-- <div class="result-box light-blue">
                 <img src="../img/showcases/case/icons/stock.svg" alt="icon" aria-hidden="true" />
                 <div class="result-message"><strong>MRR increase</strong></div>
                 <div class="result-number">$525</div>
-            </div>
-            <div class="result-box light-green">
+            </div> -->
+            <!-- <div class="result-box light-green">
                 <img src="../img/showcases/case/icons/money.svg" alt="icon" aria-hidden="true" />
                 <div class="result-message"><strong>Loss Preventation</strong></div>
                 <div class="result-number">$1500</div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -173,19 +156,19 @@
                 <div class="swiper-slide purple">
                     <h4>
                         Worship Online:
-                        Stripe Integration
+                        Prevent account sharing with MFA
                     </h4>
-                    <p>How we reconciled app users with Stripe and prevented financial losses.</p>
+                    <p>Learn how Multi Factor Authentication (MFA) can help you prevent account sharing and unauthorized access to your data.</p>
                     <div>
                         <button type="button" class="tag purple">
-                            Stripe Integration
+                            Optimization
                         </button>
                     </div>
                     <div class="slide-footer">
                         <div class="client-img">
-                            <a href="https://blog.widefix.com/reconcile-app-users-against-stripe-and-prevent-financial-losses/" target="_blank" alt="Worship Online"><img src="../img/showcases/clients/wo.svg" alt="Client"></a>
+                            <a href="https://blog.widefix.com/prevent-account-sharing-with-mfa/ " target="_blank" alt="Worship Online"><img src="../img/showcases/clients/wo.svg" alt="Client"></a>
                         </div>
-                        <a href="https://blog.widefix.com/reconcile-app-users-against-stripe-and-prevent-financial-losses/" target="_blank" class="slide-learn-more">
+                        <a href="https://blog.widefix.com/prevent-account-sharing-with-mfa/ " target="_blank" class="slide-learn-more">
                             Learn more
                         </a>
                     </div>
@@ -304,11 +287,10 @@
 <section class="case-need-help" id="help">
     <div class="inner p-vertical wrapper">
         <h2>
-            Need help with Stripe integration?
+            Need for help with performance optimization? Get a free consultation
         </h2>
         <div class="button-container">
-            <a type="button" class="button primary" href="https://calendly.com/andrei-kaleshka/30min" target="_blank"
-               rel="nofollow">
+            <a type="button" class="button primary" href="https://calendly.com/andrei-kaleshka/30min" target="_blank" rel="nofollow">
                 Get a free consultation
             </a>
         </div>
