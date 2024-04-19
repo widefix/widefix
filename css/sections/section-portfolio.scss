@@ -9,6 +9,56 @@
 .showcases-paddings {
   padding-top: 21px;
   padding-bottom: 80px;
+
+  .portfolio-inner {
+    @media screen and (max-width: $media-xsm) {
+      margin: 0 16px;
+      padding: 0;
+
+      .portfolio {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        .we-are-widefix p:last-of-type {
+          margin-bottom: 40px;
+        }
+
+        .portfilio-items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 15px;
+
+          h1 {
+            font-size: 75px;
+  
+            &:after {
+              top: -20px;
+              right: -34px;
+            }
+          }
+  
+          .portfolio-projects-video {
+            flex-direction: column;
+  
+            div {
+              display: flex;
+              flex-direction: column;
+            }
+
+            &:first-of-type img {
+              width: 100%;
+            }
+          }
+  
+          .portfolio-clients {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 .portfolio {
@@ -60,6 +110,7 @@
     > img {
       margin: 0 auto 60px auto;
       display: block;
+      width: 100%;
     }
   }
 
