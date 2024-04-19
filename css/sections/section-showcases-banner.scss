@@ -16,6 +16,10 @@
   .inner {
     display: block;
   }
+
+  @media screen and (max-width: $media-xsm) {
+    margin: 0 16px;
+  }
 }
 
 .showcase-banner-clients {
