@@ -13,7 +13,7 @@ const swiper = new Swiper('.clients-swiper', {
 
 const swiper2 = new Swiper('.case-swiper', {
     modules: [Navigation, Pagination],
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 39,
     navigation: {
         nextEl: '.swiper-button-next',

@@ -48,6 +48,7 @@
 
 .case-studies {
   margin: 80px 0;
+
   article {
     padding: 35px 49px;
     border-radius: 21px;
@@ -59,6 +60,29 @@
     }
     &:last-of-type {
       margin-bottom: 0;
+    }
+  }
+
+  .inner {
+    @media screen and (max-width: $media-xsm) {
+      padding: 0;
+      margin: 0 16px;
+
+      article {
+        padding: 10px 15px;
+        .accordion-title {
+          flex-direction: column;
+
+          h3 {
+            font-size: 26px;
+          }
+
+          .accordion-actions {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -109,6 +133,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     backdrop-filter: blur(2px);
+    margin: 0 10px;
+    max-width: 330px;
     &.purple {
       background-image: linear-gradient(180deg, rgba(111, 43, 130, 0.75) 0%, #6F2B82 82.28%), url("../img/showcases/laptop.png");
     }

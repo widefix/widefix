@@ -94,6 +94,9 @@ h2.results {
 }
 
 .h2-stripe {
+  @media screen and (max-width: $media-xsm) {
+    font-size: 36px;
+  }
   color: #1C2F42;
   font-family: "Greycliff CF";
   font-size: 48px;
