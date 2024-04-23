@@ -2,12 +2,30 @@
   p {
     margin-bottom: 32px;
   }
+
+  @media screen and (max-width: $media-xsm) {
+    .inner {
+      margin: 0 16px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
 }
 
 .case-solution {
   .inner {
     display: flex;
     gap: 57px;
+
+    @media screen and (max-width: $media-xsm) {
+      margin: 0 16px;
+
+      img {
+        height: 100%;
+      }
+    }
   }
 }
 

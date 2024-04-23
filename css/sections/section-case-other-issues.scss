@@ -1,4 +1,10 @@
 .case-other-issues {
+  @media screen and (max-width: $media-xsm) {
+    .inner {
+      margin: 0 16px;
+    }
+  }
+
   h2 {
     color: #0D2234;
     font-family: "Greycliff CF";

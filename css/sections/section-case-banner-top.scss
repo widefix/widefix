@@ -24,8 +24,8 @@
     right: 0;
   }
   @media screen and (max-width: $media-xsm) {
-    margin: 0 16px;
     padding-top: 100px;
+    margin-top: 20px;
   }
   .inner {
     display: flex;
