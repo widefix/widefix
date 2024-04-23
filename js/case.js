@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const swiper3 = new Swiper('.case-swiper', {
     modules: [Navigation, Pagination],
-    slidesPerView: 3,
+    slidesPerView: "auto",
     spaceBetween: 39,
     navigation: {
         nextEl: '.swiper-button-next',

@@ -23,6 +23,10 @@
     bottom: 0;
     right: 0;
   }
+  @media screen and (max-width: $media-xsm) {
+    padding-top: 140px;
+    margin-top: 20px;
+  }
   .inner {
     display: flex;
     position: relative;
@@ -32,7 +36,12 @@
     @media screen and (min-width: $media-md) {
       padding: 157px 32px 174px;
     }
-
+    @media screen and (max-width: $media-xsm) {  
+      margin: 0 16px;
+      h1 {
+        font-size: 58px;
+      }
+    }
   }
   h1 {
     color: #FFF;
@@ -48,6 +57,10 @@
       @media screen and (min-width: $media-md) {
         width: 687px;
         height: 377px;
+      }
+
+      @media screen and (max-width: $media-xsm) {
+        display: none;
       }
     }
   }

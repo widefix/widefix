@@ -2,6 +2,14 @@
   .inner {
     display: flex;
     gap: 22px;
+
+    @media screen and (max-width: $media-xsm) {
+      margin: 0 16px;
+
+      img {
+        height: 100%;
+      }
+    }
   }
 }
 

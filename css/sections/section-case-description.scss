@@ -1,5 +1,14 @@
 .p-vertical {
   padding: 80px 0;
+
+  @media screen and (max-width: $media-xsm) {
+    flex-direction: column;
+    margin: 0 16px;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .case-description {
@@ -26,6 +35,13 @@
     padding-left: 160px;
     padding-right: 160px;
     display: flex;
+
+    @media screen and (max-width: $media-xsm) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 16px;
+      flex-direction: column;
+    }
   }
 
   .description {
@@ -35,7 +51,9 @@
 
 .menu {
   margin-left: auto;
-
+  @media screen and (max-width: $media-xsm) {
+    margin-left: 0;
+  }
   ul {
     margin: 0;
     padding: 0;
