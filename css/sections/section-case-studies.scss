@@ -134,7 +134,10 @@
     flex-wrap: wrap;
     backdrop-filter: blur(2px);
     margin: 0 10px;
-    max-width: 330px;
+    width: 30%;
+    @media screen and (max-width: $media-xsm) {
+      width: 90%;
+    }
     &.purple {
       background-image: linear-gradient(180deg, rgba(111, 43, 130, 0.75) 0%, #6F2B82 82.28%), url("../img/showcases/laptop.png");
     }
