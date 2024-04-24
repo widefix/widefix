@@ -7,6 +7,8 @@ header {
     @media (max-width: $media-xsm) {
       flex-direction: column;
       margin-top: 27px;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 
@@ -19,8 +21,13 @@ header {
     }
 
     @media (max-width: $media-xsm) {
-      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      margin-left: 0;
       width: 100%;
+      z-index: 2;
     }
 
     ul {
@@ -46,7 +53,7 @@ header {
           color: $text-link-secondary-default;
           text-decoration: none;
           @media (max-width: $media-xsm) {
-            font: $text-body-floating-label-regular;
+            font: $text-link-body-small;
           }
         }
 
